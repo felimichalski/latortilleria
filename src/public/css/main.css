@@ -1,0 +1,763 @@
+
+:root {
+    --link: white;
+    --link-nav-light: black;
+    --mustard: #FFC300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/decoration.png) repeat;
+}
+
+/* Start Global Classes */
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* End Global Classes */
+
+/* Start Navbar */
+
+.nav {
+    background: transparent;
+    height: 7.191vw;
+    min-height: 4rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.nav.nav-light {
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+
+.nav.nav-light .nav-menu .nav-items .nav-link button {
+    color: var(--link-nav-light);
+}
+
+.nav.nav-light .nav-menu .social-icons a {
+    color: var(--link-nav-light);
+}
+
+.nav.nav-light .nav-menu .social-icons svg {
+    fill: var(--link-nav-light);
+}
+
+.nav.nav-light .toggle-collapse .toggle-icons ion-icon {
+    color: var(--link-nav-light)
+}
+
+.nav.nav-light .toggle-collapse .toggle-icons .open-sidebar-btn ion-icon {
+    font-size: 1.4rem;
+    color: var(--link-nav-light);
+    cursor: pointer;
+}
+
+
+.nav .nav-menu {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .nav-menu .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-menu .nav-items .nav-link {
+    position: relative;
+}
+
+.nav .nav-menu .nav-items .nav-link button {
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    font-family: Montserrat;
+    color: var(--link);
+    transition: .3s ease;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.nav .nav-menu .nav-items .nav-link button:hover {
+    color: var(--mustard);
+}
+
+.nav .nav-menu .nav-brand img {
+    height: 4.494vw;
+    width: 4.494vw;
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    transition: .5s
+}
+
+.nav .nav-menu .social-icons a {
+    color: var(--link);
+}
+
+.nav .nav-menu .social-icons ion-icon {
+    padding: .275vw;
+    transition: .3s;
+    font-size: 1.79vw;
+}
+
+.nav .nav-menu .social-icons ion-icon:hover{
+    color: var(--mustard);
+}
+
+.nav .nav-menu .social-icons svg {
+    padding: 0 .138vw;
+    transition: .3s;
+    height: 1.79vw;
+    width: 1.79vw;
+    margin: .275vw;
+    background-color: #EE2D43;
+    border-radius: .275vw;
+}
+
+.nav .nav-menu .social-icons svg .st0 {
+    fill: #FFFFFF;
+}
+
+.nav .toggle-collapse {
+    display: none;
+    width: calc(100% - 3.5rem);
+}
+
+.nav .toggle-collapse .toggle-icons .open-sidebar-btn {
+    background: transparent;
+    border: none;
+}
+
+.nav .toggle-collapse .toggle-icons .open-sidebar-btn ion-icon {
+    font-size: 1.4rem;
+    color: var(--link);
+    cursor: pointer;
+}
+
+/* End Navbar */
+
+/* Start Sidebar */
+
+.sidebar-overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 105;
+    visibility: hidden;
+    transition: all .7s;
+}
+
+aside.sidebar {
+    position: fixed;
+    width: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: white;
+    z-index: 110;
+    transition: .7s ease;
+    text-align: center;
+    overflow: auto;
+}
+
+aside.sidebar.show {
+    width: 20rem;
+}
+
+aside.sidebar .close-sidebar-btn {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: black;
+    z-index: inherit;
+}
+
+aside.sidebar .close-sidebar .close-sidebar-btn {
+    background: transparent;
+    border: none;
+}
+
+aside.sidebar .nav-items {
+    padding-top: 4rem;
+    margin: 0;
+}
+
+aside.sidebar .nav-items .nav-link {
+    position: relative;
+}
+
+aside.sidebar .nav-items .nav-link button {
+    padding: .5rem 0;
+    font-size: .6rem;
+    font-family: Montserrat;
+    background: none;
+    border: none;
+    color: var(--link-nav-light);
+}
+
+aside.sidebar .social-icons {
+    margin-top: 2rem;
+}
+
+aside.sidebar .social-icons a {
+    color: var(--link-nav-light);
+}
+
+aside.sidebar .social-icons ion-icon {
+    padding: .2rem;
+    transition: .3s;
+    font-size: 1.5rem;
+}
+
+aside.sidebar .social-icons svg {
+    padding: 0 .1rem;
+    transition: .3s;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: .2rem;
+    background-color: #EE2D43;
+    border-radius: .2rem;
+}
+
+aside.sidebar .social-icons svg .st0 {
+    fill: #FFFFFF;
+}
+
+aside.sidebar .gallery-container {
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+aside.sidebar .gallery-container .title {
+    font-family: Montserrat;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+aside.sidebar .gallery-container .wrap-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+aside.sidebar .gallery-container .wrap-gallery .item-gallery {
+    display: block;
+    position: relative;
+    width: calc(100% / 3 );
+    height: 5rem;
+    padding: .5rem;
+    overflow: hidden;
+}
+
+aside.sidebar .gallery-container .wrap-gallery .item-gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+/* End Sidebar */
+
+/* Start Footer */
+
+footer.footer {
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 2vw;
+}
+
+footer.footer .container > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3.488vw 1.163vw;
+}
+
+footer.footer .container h2 {
+    color: white;
+    padding: 0 0 2rem 0;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 1.429vw;
+}
+
+footer.footer .schedule .week {
+    list-style: none;
+}
+
+footer.footer .schedule .week .day {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: .3rem 0;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1vw;
+}
+
+footer.footer .schedule .week .day .hour {
+    color: #a9a9a9;
+}
+
+footer.footer .subscribe .subscribe-form {
+    margin-bottom: 1rem;
+}
+
+footer.footer .subscribe .subscribe-form .input-field {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer.footer .subscribe .subscribe-form .input-field .ui-input-text {
+    width: 80%;
+}
+
+footer.footer .subscribe .subscribe-form .input-field .ui-input-text input {
+    width: 100%;
+}
+
+footer.footer .subscribe .subscribe-form .input-field button {
+    background: #d6ad86;
+    color: white;
+    cursor: pointer;
+}
+
+footer.footer .subscribe .subscribe-form .input-field input, footer.footer .subscribe .subscribe-form .input-field button {
+    border: none;
+    border-radius: 0;
+    height: 1.6rem;
+    padding: 0 .8rem;
+    outline: none;
+    font-size: .7rem;
+}
+
+footer.footer .subscribe .info {
+    color: #a9a9a9;
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: .711vw;
+}
+
+footer.footer .subscribe .torti {
+    width: 100%;
+    text-align: center;
+}
+
+footer.footer .subscribe .torti img {
+    width: 12vw;
+}
+
+footer.footer .instagram .wrap-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer.footer .instagram .wrap-gallery .item-gallery {
+    display: block;
+    position: relative;
+    width: calc(100% / 3 );
+    padding: .444vw;
+    overflow: hidden;
+}
+
+footer.footer .instagram .wrap-gallery .item-gallery img {
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+footer.footer .instagram .wrap-gallery .item-gallery .img-overlay {
+    position: absolute;
+    width: calc(100% - .888vw);
+    height: calc(100% - .888vw);
+    top: 0;
+    left: 0;
+    background-color: var(--mustard);
+    opacity: 0;
+    transition: .3s;
+    margin: .444vw;
+    cursor: pointer;
+}
+
+footer.footer .instagram .wrap-gallery .item-gallery .img-overlay:hover {
+    opacity: .8;
+}
+
+footer.footer .instagram .tag {
+    margin: .444vw .444vw .444vw auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    border-radius: .3rem;
+    padding: .2rem 0;
+    color: white;
+}
+
+footer.footer .instagram .tag img {
+    width: 1.951vw;
+    border-radius: 50%;
+    border: 1px solid #D9D7D2;
+}
+
+footer.footer .instagram .tag span {
+    font-family: Poppins;
+    font-weight: 300;
+    margin: 0 .561vw;
+    font-size: 1.123vw;
+}
+
+footer.footer .instagram .tag ion-icon {
+    transform: rotate(-45deg);
+    font-size: 1.123vw;
+}
+
+footer.footer .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+footer.footer .contact .info {
+    color: white;
+    font-family: Poppins;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+
+footer.footer .contact .info .entry {
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+footer.footer .contact .info .entry ion-icon {
+    margin-right: .5rem;
+    height: 1vw;
+}
+
+footer.footer .rights {
+    text-align: center;
+    font-family: Montserrat;
+    color: gray;
+    margin-bottom: 2rem;
+    font-size: 0.896vw;
+}
+
+/* End Footer */
+
+/* Start Messages  */
+
+.success-msg {
+    visibility: hidden;
+    font-size: .8vw;
+    padding: 1vw 2vw;
+    border-radius: .4rem;
+    position: fixed;
+    font-family: Poppins;
+    font-weight: 300;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 8vw;
+    z-index: 200;
+    transition: all .7s;
+    text-align: center;
+}
+
+.email-success-msg {
+    visibility: hidden;
+    font-size: .8vw;
+    padding: 1vw 2vw;
+    border-radius: .4rem;
+    position: fixed;
+    font-family: Poppins;
+    font-weight: 300;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 8vw;
+    z-index: 200;
+    transition: all .7s;
+    text-align: center;
+}
+
+.error-msg {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: .7vw;
+    display: none;
+    color: #d9534f; 
+    margin: .5vw auto;
+    padding: none;
+    width: calc(80% + 2.3rem);
+}
+
+/* End Messages */
+
+/* Start Loader */
+
+.loader-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(225, 225, 225, .4);
+    z-index: 2000;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* End Loader */
+
+/* Start Viewports */
+
+@media only screen and (max-width: 1250px) {
+    footer.footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer.footer .container h2 {
+        font-size: 2.5vw;
+    }
+
+    footer.footer .schedule .week .day {
+        font-size: 1.6vw;
+    }
+
+    footer.footer .subscribe .info {
+        font-size: 1vw;
+    }
+
+    footer.footer .subscribe .torti img {
+        width: 20vw;
+    }
+
+    footer.footer .instagram .wrap-gallery .item-gallery {
+        padding: .9vw;
+    }
+
+    footer.footer .instagram .wrap-gallery .item-gallery .img-overlay {
+        width: calc(100% - 1.8vw);
+        height: calc(100% - 1.8vw);
+        margin: .9vw;
+    }
+
+    footer.footer .instagram .tag {
+        padding: .9vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    footer.footer .instagram .tag img {
+        width: 4vw;
+    }
+    
+    footer.footer .instagram .tag span {
+        margin: 0 1.152vw;
+        font-size: 2.303vw;
+    }
+    
+    footer.footer .instagram .tag ion-icon {
+        font-size: 2.303vw;
+    }
+
+    footer.footer .contact .info .entry {
+        font-size: 1.6vw;
+    }
+    
+    footer.footer .contact .info .entry ion-icon {
+        height: 1.6vw;
+    }
+
+    footer.footer .rights {
+        font-size: 1.5vw;
+    }
+    
+    .success-msg {
+        font-size: 1.12vw;
+    }
+    
+    .email-success-msg {
+        font-size: 1.12vw;
+    }
+    
+    .error-msg {
+        font-size: 1vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav {
+        height: 6rem;
+    }
+
+    .nav.nav-light {
+        height: auto;
+        padding: .2rem 2rem;
+    }
+
+    .nav .nav-menu .nav-brand img {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .nav .nav-menu .nav-items {
+        display: none;
+    }
+    
+    .nav .nav-menu .social-icons {
+        display: none;
+    }
+
+    .nav .toggle-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    footer.footer .container > div {
+        padding: 6vw 7vw;
+    }
+    
+    footer.footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer.footer .container h2 {
+        font-size: 4vw;
+    }
+
+    footer.footer .schedule .week .day {
+        font-size: 2.8vw;
+    }
+
+    footer.footer .subscribe .info {
+        font-size: 2vw;
+    }
+
+    footer.footer .subscribe .torti img {
+        width: 30vw;
+    }
+
+    footer.footer .instagram .wrap-gallery .item-gallery {
+        padding: 1.2vw;
+    }
+
+    footer.footer .instagram .wrap-gallery .item-gallery .img-overlay {
+        width: calc(100% - 2.4vw);
+        height: calc(100% - 2.4vw);
+        margin: 1.2vw;
+    }
+
+    footer.footer .instagram .tag {
+        margin: 1.2vw 1.2vw 1.2vw auto;
+    }
+
+    footer.footer .instagram .tag img {
+        width: 7vw;
+    }
+    
+    footer.footer .instagram .tag span {
+        margin: 0 2.015vw;
+        font-size: 4.03vw;
+    }
+    
+    footer.footer .instagram .tag ion-icon {
+        font-size: 4.03vw;
+    }
+
+    footer.footer .contact .info .entry {
+        font-size: 2.8vw;
+    }
+    
+    footer.footer .contact .info .entry ion-icon {
+        height: 2.8vw;
+    }
+    
+    footer.footer .rights {
+        font-size: 2.2vw;
+    }
+    
+    .success-msg {
+        top: 20vw;
+        font-size: 2.25vw;
+        padding: 1.6vw 2.4vw;
+    }
+    
+    .email-success-msg {
+        top: 20vw;
+        font-size: 2.25vw;
+        padding: 1.6vw 2.4vw;
+    }
+    
+    .error-msg {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    aside.sidebar.show {
+        width: 13rem;
+    }
+
+    aside.sidebar .gallery-container .wrap-gallery .item-gallery {
+        width: calc(100% / 2 );
+        height: 4.3rem;
+    }
+
+    aside.sidebar .gallery-container .item-gallery:nth-child(n + 7) {
+        display: none;
+    }
+}
+
+/* End Viewports */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="No te quedes sin probar las mejores tortillas de Buenos Aires. ¡Te esperamos!">
+    <meta name="keywords" content="tortilla, tortilleria, papa, huevo, comida, restaurant, mercat, villa crespo">
+    <meta name="robots" content="index"/>
+    <meta name="theme-color" content="light"/>
+    <title>La Tortillería</title>
+    <link rel="canonical" href="https://latortilleria.com">
+    <link rel="icon" href="img/logos/logo1.png" type="image/png">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
+    {{!-- Google Fonts --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300;700&family=Roboto:wght@300;500&family=Fredoka:wght@300;700&family=Fira+Sans&family=Montserrat:wght@400&family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+
+    {{!-- Lightbox --}}
+    <link rel="stylesheet" href="/css/lightbox.css">
+
+    {{!-- Custom Styles --}}
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/{{ css }}.css">
+</head>
+<body>
+
+    {{> navigation }}
+
+    {{> sidebar }}
+
+    {{> message}}
+
+    {{{ body }}}
+
+    {{> footer }}
+
+    {{!-- Jquery --}}
+    <script src="/js/jquery-2.2.4.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+
+    {{!-- Ion Icons --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    {{!-- Circletype --}}
+    <script src="/js/circletype.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="/js/owl.carousel.min.js"></script>
+
+    {{!-- Lightbox --}}
+    <script src="/js/lightbox.min.js"></script>
+
+    {{!-- Custom Script --}}
+    <script src="/js/index.js"></script>
+    <script src="/js/{{ js }}.js"></script>
+</body>
+</html>

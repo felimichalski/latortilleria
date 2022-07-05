@@ -1,0 +1,888 @@
+/* Start Title */
+
+section.title {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.title .overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 15;
+    background-color: black;
+    opacity: .7;
+}
+
+section.title .welcome-text {
+    z-index: 20;
+    width: 100%;
+    color: white;
+}
+
+section.title .welcome-text .text-container .title {
+    font-family: Poppins;
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+section.title .welcome-text .text-container .title div{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 6vw 0;
+}
+
+section.title .welcome-text .text-container .subtitle {
+    font-family: Courgette;
+    font-size: 3.6vw;
+    font-weight: 300;
+}
+
+section.title .title-background {
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+section.title .title-background .owl-stage {
+    height: 100vh;
+}
+
+section.title .title-background .owl-item > div {
+    height: 100vh;
+    width: 100%;
+}
+
+section.title .title-background .owl-item .sl1 {
+    background: url(../img/slider/sl1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.title .title-background .owl-item .sl2 {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/slider/sl2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.title .title-background .owl-item .sl3 {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/slider/sl3.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* End Title */
+
+/* Start About Us */
+
+section.about-us {
+    padding: 6.042vw 0 1.5vw 0;
+}
+
+section.about-us .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 4rem;
+}
+
+section.about-us .container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.about-us .row .about-content {
+    padding: 2.417vw 0;
+    position: relative;
+    width: 100%;
+}
+
+section.about-us .row .about-content.img-content {
+    padding: 0 0 2.417vw 0;
+}
+
+section.about-us .row .about-content .welcome h2 {
+    font-family: Kalam;
+    font-size: 2.417vw;
+    font-weight: 800;
+    margin-bottom: 2.417vw;
+}
+
+section.about-us .row .about-content .welcome p {
+    font-size: .967vw;
+    font-family: Poppins;
+    font-weight: 300;
+}
+
+section.about-us .img-content .expand-image {
+    display: block;
+    overflow: hidden;
+    border-radius: .7rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30.211vw;
+}
+
+section.about-us .img-content .expand-image img {
+    width: 100%;
+    transition: .5s ease-out;
+    vertical-align: middle;
+    border-style: none;
+}
+
+section.about-us .img-content .expand-image img:hover {
+    transform: scale(1.1);
+}
+
+/* End About Us */
+
+.separator {
+    padding: 0 2rem;
+    height: 2.3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.separator hr {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.separator span {
+    background: url(../img/decoration.png) repeat;
+    width: 8vw;
+    height: 2.3vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.separator span img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Start Menu */
+
+section.menu {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 62%, rgba(255,241,193,1) 74%, rgba(255,229,144,1) 84%, rgba(255,211,66,1) 90%, rgba(255,195,0,1) 96%);
+    position: relative;
+}
+
+section.menu .link-menu {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    font-family: Kalam;
+    font-size: 1.1vw;
+    font-weight: 300;
+    color: black;
+    width: 14vw;
+    border: 1px solid gray;
+    border-radius: .2rem;
+}
+
+section.menu .link-menu ion-icon {
+    vertical-align: middle;
+    transform: rotate(-45deg);
+}
+
+section.menu .container {
+    width: 100%;
+    padding: 2vw 3.5vw;
+}
+
+section.menu .container .head {
+    display: flex;
+    flex-direction: column;
+    font-family: Kalam;
+}
+
+section.menu .container .head h2 {
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
+}
+
+section.menu .container .head span {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+section.menu .container .head span img {
+    height: 1.3vw;
+    margin-left: .352vw;
+}
+
+section.menu .container .columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section.menu .container .columns .info {
+    font-family: Kalam;
+    font-size: 1.1vw;
+    font-weight: 300;
+    width: 60%;
+    margin: 0 auto;
+}
+
+section.menu .container .columns .text-center > .product {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1.15vw;
+    margin: .3rem 2vw;
+}
+
+section.menu .container .columns .text-center > .product ion-icon {
+    margin-right: .2rem;
+    vertical-align: middle;
+}
+
+section.menu .container .columns .text-center > .product .dots {
+    flex-grow: 1;
+    height: .1vw;
+    margin: 0 .8vw .4vw .8vw;
+    background: url(../img/dots.png) repeat;
+}
+
+section.menu .container .columns .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2vw;
+    margin-bottom: 1rem;
+}
+
+section.menu .container .columns > div > h2 {
+    font-size: 2.5vw;
+    font-family: Kalam;
+    margin: 3vw 0;
+}
+
+section.menu .container .columns .grid .col {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1vw;
+}
+
+section.menu .container .columns .grid .col > h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.6vw;
+    margin-bottom: 1rem;
+}
+
+section.menu .container .columns .grid .col .product {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1.15vw;
+    margin: .3rem 0;
+}
+
+section.menu .container .columns .grid .col .product {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section.menu .container .columns .grid .col .product ion-icon {
+    margin-right: .2rem;
+}
+
+section.menu .container .columns .grid .col .product .dots {
+    flex-grow: 1;
+    height: .1vw;
+    margin: 0 .8vw .4vw .8vw;
+    background: url(../img/dots.png) repeat;
+}
+
+/* End Menu */
+
+/* Start Featured */
+
+section.featured {
+    background: url(../img/decoration.png) repeat;
+    padding: 8.459vw 0;
+    position: relative;
+    margin: auto 0;
+}
+
+section.featured .custom-shape-divider-top-1647364006 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+section.featured .custom-shape-divider-top-1647364006 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10.876vw;
+}
+
+section.featured .custom-shape-divider-top-1647364006 .shape-fill {
+    fill: #FFC300;
+}
+
+section.featured .custom-shape-divider-bottom-1647364087 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+section.featured .custom-shape-divider-bottom-1647364087 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10.876vw;
+}
+
+section.featured .custom-shape-divider-bottom-1647364087 .shape-fill {
+    fill: #FFC300;
+}
+
+section.featured > h2 {
+    margin: 3vw 0 1vw 0;
+    font-size: 4vw;
+    font-family: Kalam;
+    font-weight: 800;
+}
+
+section.featured .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 8vw;
+}
+
+section.featured .grid .product {
+    margin: 1vw 1vw 5vw 1vw;
+    background-color: transparent;
+}
+
+section.featured .grid .product .expand-image {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    height: 20vw;
+    border-radius: .4rem;
+}
+
+section.featured .grid .product .expand-image img {
+    width: 100%;
+    transition: .3s ease-out;
+    vertical-align: bottom;
+}
+
+section.featured .grid .product .expand-image img:hover {
+    transform: scale(1.1) rotate(6deg);
+}
+
+section.featured .grid .product > h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 2vw;
+    margin: 1rem 0;
+}
+
+section.featured .grid .product > p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1.15vw;
+}
+
+/* End Featured */
+
+/* Start Gallery */
+
+section.gallery {
+    background: linear-gradient(180deg, rgba(255,195,0,1) 2%, rgba(255,207,48,1) 6%, rgba(255,211,66,1) 9%, rgba(255,229,144,1) 16%, rgba(255,255,255,0) 26%);
+    padding: 10vw 4vw 2vw 4vw;
+    position: relative;
+    z-index: 1;
+}
+
+section.gallery > h2 {
+    margin: 1vw 0;
+    font-size: 4vw;
+    font-family: Kalam;
+    font-weight: 800;
+}
+
+section.gallery .wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.gallery .wrap-container .picture-container {
+    width: calc(100% / 3 );
+    height: 29vw;
+    padding: 1.5vw;
+    overflow: hidden;
+    position: relative;
+}
+
+section.gallery .wrap-container .picture-container img {
+    border-radius: .4rem;
+    height: 100%;
+    width: 100%;
+}
+
+section.gallery .wrap-container .picture-container .img-overlay {
+    position: absolute;
+    width: calc(100% - 3vw);
+    height: calc(100% - 3vw);
+    top: 0;
+    left: 0;
+    background-color: var(--mustard);
+    opacity: 0;
+    border-radius: .4rem;
+    transition: .3s;
+    margin: 1.5vw;
+    cursor: pointer;
+}
+
+section.gallery .wrap-container .picture-container .img-overlay:hover {
+    opacity: .8;
+}
+
+section.gallery .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+section.gallery .pagination .item {
+    border: 1px solid black;
+    padding: 1.2vw;
+    margin: 0.2rem .4rem;
+    font-size: 1.2vw;
+    font-family: Montserrat;
+    font-weight: 300;
+    border-radius: 50%;
+    height: 2vw;
+    width: 2vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+section.gallery .pagination .item:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+section.gallery .pagination .item.active {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+/* End Gallery */
+
+/* Start Location */
+
+section.location {
+    display: flex;
+    justify-content: center;
+    margin: 0 3.32vw;
+}
+
+section.location .container {
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .4rem;
+}
+
+section.location .container .location-text > h2 {
+    font-size: 4vw;
+    font-family: Kalam;
+    font-weight: 800;
+}
+
+section.location .container .location-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1rem 0;
+}
+
+section.location .container .location-text .info {
+    font-size: 1.5vw;
+    letter-spacing: .085vw;
+    line-height: 1.7;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+section.location .container .location-text .info a {
+    font-weight: bolder;
+    color: red;
+    text-shadow: 0.1vw 0.1vw black;
+}
+
+section.location .container .location-content {
+    width: 100%;
+    padding: 0 1.7vw 1.7vw 1.7vw;
+}
+
+section.location .container .location-content .map {
+    border: none;
+    border-radius: .7rem;
+    width: 100%;
+    height: 30.211vw;
+}
+
+/* End Location */
+
+/* Start Contact */
+
+section.contact .container {
+    margin: 3rem auto;
+    width: 80%;
+}
+
+section.contact .container > h2 {
+    font-size: 4vw;
+    font-family: Kalam;
+    font-weight: 800;
+}
+
+section.contact .container .contact-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.contact .container .contact-form .input-field {
+    width: 50%;
+    padding: 1vw 2vw;
+}
+
+section.contact .container .contact-form .input-field input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 1vw 2vw;
+    background: white;
+    border-radius: .6rem;
+    font-family: Miso, sans-serif;
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+
+section.contact .container .contact-form textarea {
+    width: 100%;
+    min-height: 15vw;
+    margin: 1vw 2vw;
+    padding: 1vw 2vw;
+    border: 1px solid #ccc;
+    border-radius: .6rem;
+    font-family: Miso, sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    resize: none;
+}
+
+section.contact .container .contact-form .contact-error-msg {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1vw;
+    display: none;
+    color: #d9534f; 
+    margin: 0 0 2vw 2vw;
+    padding: none;
+    width: 100%;
+}
+
+section.contact .container .contact-form button {
+    border: none;
+    background: #000;
+    color: white;
+    border-radius: .6rem;
+    font-size: 1.4vw;
+    font-family: Miso, sans-serif;
+    font-weight: 700;
+    padding: 1vw 2vw;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s;
+}
+
+section.contact .container .contact-form button:hover {
+    background: #FFC300;
+    color: black; 
+}
+
+/* End Contact */
+
+/* Start Viewports */
+
+@media only screen and (max-width: 800px) {
+    section.title .welcome-text .text-container .title {
+        font-size: 9vw;
+    }
+    
+    section.title .welcome-text .text-container .subtitle {
+        font-size: 6.2vw;
+    }
+}
+
+@media only screen and (min-width: 781px) {
+    section.about-us .row .about-content {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    section.about-us .row .about-content.text-content {
+        padding: 2.417vw 2.417vw 2.417vw 0;
+    }
+    
+    section.featured .row .products-content {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .separator {
+        height: 4vw;
+    }
+
+    .separator span {
+        width: 16vw;
+        height: 4vw;
+    }
+
+    section.about-us{
+        padding: 12vw 0;
+    }
+    
+    section.about-us .row .about-content .welcome h2 {
+        font-size: 8vw;
+        margin-bottom: 5vw;
+    }
+    
+    section.about-us .row .about-content .welcome p {
+        font-size: 3.2vw;
+        text-align: justify;
+    }
+    
+    section.about-us .img-content .expand-image {
+        max-width: 70vw;
+    }
+    
+    section.menu .link-menu {
+        font-size: 1.8vw;
+        font-weight: 800;
+        width: 20vw;
+        top: 4vw;
+        right: 4vw;
+    }
+    
+    section.menu .container {
+        width: 100%;
+        padding: 12vw 5vw 30vw 5vw;
+    }    
+      
+    section.menu .container .head h2 {
+        font-size: 8vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    section.menu .container .head span {
+        font-size: 3vw;
+        width: 80%;
+        justify-content: center;
+    }
+
+    section.menu .container .head span img {
+        height: 3.4vw;
+        margin-left: 1vw;
+    }
+
+    section.menu .container .columns {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.menu .container .columns .text-center > .product {
+        font-size: 3vw;
+        margin: .3rem 5vw;
+    }
+
+    section.menu .container .columns .text-center > .product .dots {
+        height: .3vw;
+        margin: 0 .5vw 1.4vw .5vw;
+    }
+
+    section.menu .container .columns .grid {
+        padding: 0 1vw;
+    }
+    
+    section.menu .container .columns > div > h2 {
+        font-size: 6vw;
+        margin: 18vw 0 2vw 0;
+    }
+    
+    section.menu .container .columns .grid .col {
+        padding: 0 2vw;
+    }
+    
+    section.menu .container .columns .grid .col > h2 {
+        font-size: 4vw;
+        margin-bottom: 1rem;
+    }
+    
+    section.menu .container .columns .grid .col .product {
+        font-size: 2.5vw;
+    }
+
+    section.menu .container .columns .grid .col .product .dots {
+        height: .25vw;
+        margin: 0 1vw .4vw 1vw;
+    }
+
+    section.menu .container .columns .info {
+        font-size: 3vw;
+        width: 70%;
+        border: 1px solid gray;
+        border-radius: .2rem;
+    }
+
+    section.featured > h2 {
+        margin: 3vw 0;
+        font-size: 8vw;
+    }    
+        
+    section.featured .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 15vw;
+    }
+
+    section.featured .grid .product {
+        margin: 1vw 1vw 10vw 1vw;
+    }
+
+    section.featured .grid .product .expand-image {
+        height: 60vw;
+    }
+
+    section.featured .grid .product > h2 {
+        font-size: 6vw;
+    }
+    
+    section.featured .grid .product > p {
+        font-size: 3.3vw;
+    }
+
+    section.gallery > h2 {
+        margin: 3vw 0;
+        font-size: 8vw;
+    }
+
+    section.gallery .wrap-container .picture-container {
+        width: calc(100% / 2 );
+        height: 40vw;
+        padding: 1.5vw;
+        overflow: hidden;
+        position: relative;
+    }
+
+    section.gallery .pagination .item {
+        padding: 3vw;
+        margin: 0 .5rem;
+        font-size: 3vw;
+        height: 5vw;
+        width: 5vw;
+    }
+
+    section.location .container .location-text > h2 {
+        font-size: 8vw;
+    }
+    
+    section.location .container .location-text .info {
+        font-size: 2.3vw;
+        letter-spacing: .17vw;
+    }
+    
+    section.location .container .location-text .info a {
+        text-shadow: .15vw .15vw black;
+    }
+    
+    section.location .container .location-content .map {
+        height: 80vw;
+    }
+
+    section.contact .container > h2 {
+        font-size: 8vw;
+    }
+
+    section.contact .container .contact-form .input-field input {
+        font-size: 3vw;
+        padding: 2vw 4vw;
+        outline: none;
+    }
+    
+    section.contact .container .contact-form textarea {
+        min-height: 25vw;
+        margin: 2vw 2vw;
+        font-size: 2.5vw;
+        outline: none;
+    }
+    
+    section.contact .container .contact-form .contact-error-msg {
+        font-size: 2.5vw;
+    }
+    
+    section.contact .container .contact-form button {
+        font-size: 3vw;
+        padding: 2vw 4vw;
+    }
+}
+
+/* End Viewports */
