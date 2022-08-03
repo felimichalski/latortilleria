@@ -3,6 +3,7 @@ const app = express();
 const router = express.Router();
 const path = require('path');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -199,6 +200,19 @@ router.get('/verification', async(req, res) => {
     }
     res.redirect('/');
 });
+
+router.get('/backoffice', (req, res) => {
+    res.render('backoffice/auth', {layout: false})
+})
+
+router.post('/backoffice', (req, res) => {
+    const { code } = req.body;
+    if(code == process.env.AUTH_CODE) {
+        res.render('backoffice/dashboard', {layout: false})
+    } else {
+        res.status(401).render('backoffice/auth', {layout: false})
+    }
+})
 
 router.all('/*', (req, res) => {
     res.redirect('/')
