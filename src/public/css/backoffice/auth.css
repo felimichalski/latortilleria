@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body {
+    background: url(../../img/decoration.png) repeat;
+    min-height: 100vh;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+nav > a:hover {
+    color:#9b9b9b;
+}
+
+.container .code-form {
+    text-align: center;
+    height: 50%;
+    width: 90vw;
+    max-width: 30rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 2rem;
+}
+
+.container .code-form h1 {
+    font-size: 3vw;
+}
+
+.container .code-form > img {
+    width: 40%;
+    min-width: 7rem;
+    margin: 2rem 0;
+}
+
+.container .code-form .form-field {
+    width: 80%;
+    margin-bottom: 1rem;
+    font-family: Roboto;
+    padding: .3rem 0;
+    font-size: 1vw;
+}
+
+.container .code-form input.form-field {
+    border: none;
+    border-bottom: #b5b5b5 1px solid;
+    outline: none;
+}
+
+.container .code-form button.form-field {
+    border: none;
+    border-radius: 4px;
+    background-color: #FFC440;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.container .code-form button.form-field:hover {
+    background-color: #ffae00;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav > a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .container .code-form h1 {
+        font-size: 1.5rem;
+    }
+    .container .code-form .form-field {
+        font-size: .5rem;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .container .code-form {
+        margin-top: 4rem;
+    }
+}
