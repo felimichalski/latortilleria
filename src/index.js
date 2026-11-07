@@ -16,7 +16,7 @@ const deleteWWW = (req, res, next) => {
 require('./database');
 
 // Settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', 4000);
 app.set('views', path.join(__dirname, '/views'));
 const hbs = create({
     defaultLayout: 'main',
